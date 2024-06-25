@@ -35,7 +35,7 @@ def rotate_ip():
             "X-Real-IP": random_ip
         }
 
-        test_url = "http://pubproxy.com/api/proxy?limit=5&format=txt"
+        test_url = "http://pubproxy.com/api/proxy?limit=5"
         response = requests.get(test_url, headers=headers, verify=False)
         data = response.json()
 
